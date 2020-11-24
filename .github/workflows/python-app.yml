@@ -26,4 +26,4 @@ jobs:
         flake8
     - name: Django tests
       run: |
-        python manage.py test
+        python manage.py test --parallel  --settings bedu_tests.test_settings
